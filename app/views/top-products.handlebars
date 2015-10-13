@@ -1,0 +1,24 @@
+<h1> TOP 3 </h1>
+<table>
+	<thead>
+		<tr>
+			<td>Title</td>
+			<td>Quantity</td>
+		</tr>
+	</thead>
+	<tbody>
+		{{#products}}
+			<tr>
+				<td>{{title}}</td>
+				<td>{{quantity}}</td>
+			</tr>
+		{{/products}}
+	</tbody>
+</table>
+
+<h1> Clients </h1>
+<ul>
+{{#clients}}
+	<li>{{name}}</li>
+{{/clients}}
+</ul>
