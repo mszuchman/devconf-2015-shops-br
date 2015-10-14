@@ -14,7 +14,9 @@
     "compression": "^1.5.2",
     "method-override": "^2.3.0",
     "glob": "^5.0.3",
-    "express-handlebars": "^2.0.1"
+    "express-handlebars": "^2.0.1",
+    "restify": "4.0.3",
+    "promise": "7.0.4" 
   },
   "devDependencies": {
     "grunt": "^0.4.5",

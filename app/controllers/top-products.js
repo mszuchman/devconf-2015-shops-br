@@ -13,7 +13,7 @@ router.get('/top-products', function (req, res, next) {
 	console.log('TOKEN:' + token + " USER_ID: " + userId);
 
 	var restClient = restify.createJsonClient({
-		url: 'http://127.0.0.1:8080',
+		url: 'https://api.mercadoshops.com',
 		version: '~1.0'
 	});
 
