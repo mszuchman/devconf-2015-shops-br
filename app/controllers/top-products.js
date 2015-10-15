@@ -87,11 +87,11 @@ var groupOrdersByProduct = function( results ) {
 	for( var i = 0; i < results.length; i++) {
 		for( var j = 0; j < results[i].products.length; j++) {
 			product = results[i].products[j];
-			console.log('Processing product:' + product.external_reference);
-			if( uniqueProducts[product.external_reference] === undefined ) {
-				uniqueProducts[product.external_reference] = product;
+			console.log('Processing product:', product);
+			if( uniqueProducts[product.sku] === undefined ) {
+				uniqueProducts[product.sku] = product;
 			} else {
-				uniqueProducts[product.external_reference].quantity += product.quantity;	
+				uniqueProducts[product.sku].quantity += product.quantity;	
 			}
 		}
 	}
